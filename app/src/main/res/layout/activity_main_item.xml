@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginTop="@dimen/margin_left">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/card_view"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_name_main"/>
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_name"
+            android:layout_toEndOf="@id/card_view"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_date_main"/>
+    </RelativeLayout>
+
+</RelativeLayout>

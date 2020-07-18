@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.sergeiandreev.tvseriesinformer">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+    <activity android:name="ru.sergeiandreev.tvseriesinformer.activities.MainActivity"
+        android:theme="@style/AppThemeBlue">
+    </activity>
+    <activity android:name="ru.sergeiandreev.tvseriesinformer.SplashScreen"
+        android:theme="@style/AppThemeSplashScreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <service android:name=".services.CreateAlarmNotification"/>
+        <service android:name=".services.NotificationService"/>
+        <service android:name=".services.UpdateService"/>
+    <activity android:name="ru.sergeiandreev.tvseriesinformer.activities.EpisodesList"
+        android:theme="@style/AppThemeBlue"/>
+        <receiver
+            android:name=".recievers.BootReciever"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+
+        </receiver>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8802461501886979~7811855261"/>
+    </application>
+
+</manifest>

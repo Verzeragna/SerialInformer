@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Сериальный информатор</string>
+    <string name="search_text">Поиск</string>
+    <string name="search_cancel">Отмена</string>
+    <string name="tittle_message">Вышла новая серия</string>
+    <string name="tittle_dialog">Результаты поиска:</string>
+    <string name="next_episode_date_info">Дата выхода следующей серии:</string>
+    <string name="close_notif">Закрыть</string>
+    <string name="delete_element">Удалить</string>
+    <string name="permission_explain">"Для показа изображений необходимо получить доступ к файлам на устройстве! Если вы запретили доступ, то вы можете разрешить его в настройках позднее."</string>
+    <string name="serial_already_have">Выбранный сериал уже присутствует!</string>
+    <string name="error_search">Ошибка поиска!</string>
+    <string name="end_serial">Сериал закончен!</string>
+    <string name="serial_not_find">Сериал не найден!</string>
+    <string name="image_donot_download">Картинка не загружена!</string>
+    <string name="dont_have_new_episodes">Сериал закончен</string>
+    <string name="message_deleted_image">Не удалось удалить изображение!</string>
+    <string name="serial_added">Сериал добавлен</string>
+</resources>

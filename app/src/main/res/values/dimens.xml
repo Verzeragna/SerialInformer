@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_main">15sp</dimen>
+    <dimen name="text_size_hint">30sp</dimen>
+    <dimen name="text_size_date">10sp</dimen>
+    <dimen name="margin_left">5dp</dimen>
+    <dimen name="text_size_name">20sp</dimen>
+    <dimen name="text_size_number">15sp</dimen>
+    <dimen name="text_size_name_main">20sp</dimen>
+    <dimen name="text_size_date_main">15sp</dimen>
+</resources>
